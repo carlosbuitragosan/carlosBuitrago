@@ -1,0 +1,11 @@
+:root {
+  --orange: #ee9b00;
+  --black: black;
+  --grey: #2e3129;
+  --white: #fff;
+  --bar-width: 30px;
+  --bar-height: 2px;
+  --bar-gap: 5px;
+  --animation: 200ms ease-in-out;
+  --burger-height: calc(var(--bar-height) * 3 + var(--bar-gap) * 2);
+}

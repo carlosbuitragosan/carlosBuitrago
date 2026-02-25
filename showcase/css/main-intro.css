@@ -1,0 +1,42 @@
+/* MAIN SECTION  */
+.main {
+  position: relative;
+  z-index: 4;
+  background: var(--white);
+  margin-top: 100vh;
+}
+
+/* INTRODUCTION SECTION*/
+
+.intro__text {
+  padding: 2rem 0 12rem 2rem;
+  margin: 0;
+  font-weight: 300;
+  font-size: 26px;
+  visibility: hidden;
+  width: 50%;
+}
+
+.download-cv {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font: inherit;
+  transition: background-color 0.3s ease;
+}
+
+.download-cv:hover {
+  background-color: #d18a08;
+  cursor: pointer;
+}
+.download-cv:active {
+  transform: scale(0.98); 
+  background-color: var(--orange); 
+}

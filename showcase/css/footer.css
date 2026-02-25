@@ -1,0 +1,20 @@
+.sentinel {
+  height: 10px;
+}
+.footer {
+  background: #43bccd;
+  padding: 2rem;
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer__icons_container {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__icon {
+  width: 30px;
+}

@@ -1,0 +1,21 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "wesbos",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "no-plusplus": "off",
+    "import/no-mutable-exports": "off",
+    "no-unused-vars": "off",
+    "camelcase": "off",
+    "no-unused-expressions": "off",
+    "ignoreNonDeclaration": "off",
+    "import/no-extraneous-dependencies": "off"
+  }
+}
+//ignoreNonDeclaration When set to true, the rule allows chains that don’t include initializing a variable in a declaration 

@@ -1,0 +1,22 @@
+{
+  "name": "portfolio_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./js/index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-wesbos": "^4.0.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "jquery": "^3.7.1",
+    "prettier": "3.3.3"
+  },
+  "dependencies": {}
+}

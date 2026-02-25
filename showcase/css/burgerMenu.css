@@ -1,0 +1,71 @@
+.burger__menu {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: #80808099;
+  }
+  
+  .burger__menu {
+    --x-width: calc(
+      var(--burger-height) * 1.41421356237
+    ); /* calculates the length of the lines when they become a cross (multiply by the square root of 2) */
+    position: absolute;
+    top: 32px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--bar-gap);
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  .burger__menu input, /* checkbox. middle line */
+  .burger__menu::before, /* top line */
+  .burger__menu::after {
+    /* bottom line */
+    content: '';
+    width: var(--bar-width);
+    height: var(--bar-height);
+    border-radius: 18px;
+    background: var(--orange);
+    transition:
+      opacity var(--animation),
+      /* transition for opacity, width, length and rotate */ width
+        var(--animation),
+      rotate var(--animation),
+      translate var(--animation);
+    transform-origin: left; /* the axis where the lines rotate are now on the left */
+  }
+
+  .burger__menu input {
+    appearance: none; /* removes checkbox appareance and takes the above settings (widht, length) */
+    pointer-events: none; /* disable click on the checkbox so that the click is handled by the b_menu */
+    width: 20px;
+  }
+
+  .burger__menu:has(input:checked)::before {
+    rotate: 45deg; /*rotates the top line downwards */
+    width: var(
+      --x-width
+    ); /*sets the new length of the line when it becomes a cross */
+    translate: 0 calc(var(--bar-height) / -2); /*moves the axis slightly up */
+  }
+
+  .burger__menu:has(input:checked)::after {
+    rotate: -45deg; /* rotates the bottom line upwards */
+    width: var(
+      --x-width
+    ); /*sets the new length of the line when it becomes a cross */
+    translate: 0 calc(var(--bar-height) / 2); /*moves the axis slightly down */
+  }
+
+  .burger__menu input:checked {
+    /* removes the middle line */
+    opacity: 0;
+    width: 0;
+  }
+}

@@ -1,0 +1,92 @@
+.skills__section {
+  padding: 0 2rem 2rem 2rem;
+}
+.main__title {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.skills__container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(160px, 1fr));
+  grid-template-rows: repeat(20, 25px);
+  gap: 1vw;
+  justify-items: center;
+  position: relative;
+}
+
+.skills__category {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  color: var(--white);
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease-out;
+}
+
+.skills__front-end {
+  background-color: #0a9396;
+  grid-column: 1;
+  grid-row: 1 / span 7;
+  z-index: 1;
+}
+
+.skills__back-end {
+  background-color: #8b45ce;
+  grid-column: 2;
+  grid-row: 4 / span 7;
+  z-index: 1;
+}
+
+.skills__databases {
+  background-color: #ea3546;
+  grid-column: 3;
+  grid-row: 7 / span 7;
+  z-index: 3;
+}
+
+.skills__tools {
+  background-color: #f9c80e;
+  grid-column: 4;
+  grid-row: 10 / span 7;
+  z-index: 2;
+}
+
+.skills__devops {
+  background-color: #43bccd;
+  grid-column: 5;
+  grid-row: 13 / span 7;
+  z-index: 2;
+}
+
+.skills__category_greyed {
+  background-color: #f1f1f1;
+}
+
+.skills__title_container {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.skills__categories_title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.fa-solid {
+  align-self: center;
+}
+
+.skills__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills_item {
+  margin-bottom: 4px;
+}

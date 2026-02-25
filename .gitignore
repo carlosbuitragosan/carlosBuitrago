@@ -1,0 +1,6 @@
+showcase/php/.env.php
+showcase/.vscode/
+node_modules/
+.DS_store
+.vscode/
+geographic-data-explorer/php/.env.php

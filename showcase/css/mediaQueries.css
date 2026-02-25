@@ -1,0 +1,215 @@
+@media only screen and (orientation: landscape) and (max-height: 430px) {
+  /* HEADER */
+  .navbar {
+    top: 100px;
+    right: 80px;
+  }
+
+  /* HERO SECTION */
+  .hero__web,
+  .hero__developer {
+    font-size: 3rem;
+  }
+
+  .hero__description {
+    font-size: 1.5rem;
+  }
+  .dropdown {
+    max-height: 70vh; 
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: var(--orange) transparent;
+  }
+
+  .dropdown::-webkit-scrollbar {
+    width: 6px;                                   
+  }
+  
+  .dropdown::-webkit-scrollbar-thumb {
+    background-color: var(--orange);
+    border-radius: 10px;
+  }
+}
+
+/* SKILLS SECTION */
+@media only screen and (min-width: 1200px) {
+  .skills__container {
+    padding: 0 10vw;
+  }
+  .experience__section {
+    padding: 0 30vw 3rem 2vw;
+  }
+}
+
+/* SKILLS SECTION */
+@media only screen and (max-width: 870px) {
+  .skills__container {
+    grid-template-columns: repeat(4, minmax(160px, 1fr));
+  }
+
+  .skills__devops {
+    grid-column: 1;
+    grid-row: 9 / span 7;
+  }
+
+  .experience__section {
+    padding: 0 10rem 3rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .header {
+    padding: 2rem 0.5rem;
+  }
+
+  .hero {
+    background: black url('../imgs/london_mobile.webp') no-repeat right / cover;
+  }
+  .hero__text_container {
+    margin-left: 0.5rem;
+  }
+
+  .download-cv {
+    margin-left: 0.5rem;
+  }
+  
+  .intro__text {
+    padding-left: 0.5rem;
+    padding-top: 1rem;
+    width: 70%;
+  }
+
+  .skills__section,
+  .portfolio__section {
+    padding: 0 0.5rem 2rem 0.5rem;
+  }
+
+  .experience__section {
+    padding: 0 1rem 3rem 1rem;
+  }
+
+  #contact {
+    padding: 0 20vw 2rem 1rem;
+  }
+}
+
+/* SKILLS SECTION */
+@media only screen and (max-width: 710px) {
+  .skills__container {
+    grid-template-columns: repeat(3, minmax(160px, 1fr));
+  }
+
+  .skills__devops {
+    grid-column: 1;
+    grid-row: 9 / span 7;
+  }
+
+  .skills__tools {
+    grid-column: 2;
+    grid-row: 12 / span 7;
+  }
+
+  .experience__section {
+    padding: 0 0.4rem 3rem 0.4rem;
+  }
+
+  #contact {
+    padding: 0 0.4rem 2rem 0.4rem;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  /* HEADER */
+  .header {
+    flex-direction: column;
+  }
+
+  .logo__container {
+    align-self: flex-start;
+  }
+
+  /* HIDE NAVBAR TO SHOW BURGER MENU */
+  .navbar {
+    position: absolute;
+    top: 110px;
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* HERO SECTION */
+
+  .hero__web,
+  .hero__developer {
+    font-size: 4rem;
+  }
+
+  .hero__description {
+    font-size: 2rem;
+  }
+
+  /* Keyframes for sliding down header with opacity change after transform */
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-150px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(-75px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Keyframes for sliding up header with opacity change first */
+  @keyframes slideUp {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-150px);
+      opacity: 0;
+    }
+  }
+
+  /* Apply header animation for the show state */
+  .navbar.show {
+    animation: slideDown 0.4s forwards;
+  }
+
+  /* Apply header animation for the hide state */
+  .navbar.hide {
+    animation: slideUp 0.5s forwards;
+  }
+
+  /* INTRODUCTION SECTION */
+  .intro__text {
+    width: 95%;
+  } 
+}
+
+/* SKILLS SECTION */
+@media only screen and (max-width: 540px) {
+  .skills__container {
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+    grid-template-rows: repeat(24, 25px);
+  }
+
+  .skills__databases {
+    grid-column: 1;
+    grid-row: 17 / span 7;
+  }
+}
