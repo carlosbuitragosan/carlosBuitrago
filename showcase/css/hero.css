@@ -4,21 +4,28 @@
   width: 100%;
   height: 100vh;
   z-index: 1;
-  background: var(--black) url('../imgs/london_desktop.webp') no-repeat center /
-    cover;
+  background: rgb(255, 251, 244);
 }
 
 .hero__text_container {
-  color: var(--orange);
-  overflow: hidden;
-  position: absolute;
-  bottom: 12vh;
-  margin-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 100px auto 0 auto;
+  padding: 0 2rem;
 }
 
 .hero__title {
-  margin: 0;
-  visibility: hidden;
+  color: var(--orange);
+  margin-top: 30vh;
+}
+
+.hero__subheading {
+  font-weight: 100;
+  font-size: 1.8rem;
+  line-height: 1px !important;
 }
 
 .hero__web,
@@ -30,4 +37,32 @@
 
 .hero__developer {
   display: block;
+}
+
+.intro__text {
+  max-width: 500px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: var(--orange);
+  color: #fff;
+  border: 2px solid var(--orange);
+}
+
+.btn--primary:hover {
+  background-color: transparent;
+  color: var(--orange);
 }

@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carlos Buitrago | Web Developer</title>
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-
-    <!-- PRELOAD AND PRECONNECT FOR PERFOMANCE -->
-    <link rel="preload" href="imgs/london_desktop.webp" as="image" />
-    <link rel="preload" href="imgs/london_mobile.webp" as="image" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
 
     <!-- CSS FILES -->
     <link rel="stylesheet" href="./css/normalize.css" />
@@ -22,7 +32,7 @@
   <body>
     <header class="header" role="banner" aria-label="Site Header">
       <div class="logo__container">
-        <a class="logo" href="#" aria-label="Carlos Buitrago - Home"></a>
+        <a class="logo" href="#" aria-label="Carlos Buitrago - Home">
           <h1 class="logo__title">CARLOS BUITRAGO</h1>
         </a>
       </div>
@@ -37,12 +47,6 @@
             <a href="#portfolio">Portfolio</a>
           </li>
           <li class="menu__item">
-            <a href="#education">Education</a>
-          </li>
-          <li class="menu__item">
-            <a href="#experience">Experience</a>
-          </li>
-          <li class="menu__item">
             <a href="#contact">Contact</a>
           </li>
         </ul>
@@ -52,25 +56,290 @@
     <div class="hero" role="banner">
       <div class="hero__text_container">
         <h1 class="hero__title">
-          <span class="screen-reader">web developer</span>
-          <span class="hero__web hero__text" aria-hidden="true">Web</span>
-          <span class="hero__developer hero__text" aria-hidden="true">Developer</span>
+          <span class="screen-reader">full stack web developer</span>
+          <span class="hero__web hero__text" aria-hidden="true"
+            >Full-Stack</span
+          >
+          <span class="hero__developer hero__text" aria-hidden="true"
+            >Web Developer</span
+          >
+          <span class="hero__subheading"
+            >Building structured, production-ready web applications with Laravel
+            and React.</span
+          >
         </h1>
+
+        <section class="intro__wrapper">
+          <span class="screen-reader">
+            Full-Stack Web Developer building structured, production-ready web
+            applications with Laravel and React. I design systems with
+            authentication, relational databases, and clear architectural
+            boundaries, focusing on maintainability and long-term scalability.
+            With a background in business ownership, I bring discipline,
+            accountability, and product-level thinking to every project.
+          </span>
+          <p class="intro__text" aria-hidden="true">
+            Full-Stack Web Developer building structured, production-ready web
+            applications with Laravel and React. I design systems with
+            authentication, relational databases, and clear architectural
+            boundaries, focusing on maintainability and long-term scalability.
+            With a background in business ownership, I bring discipline,
+            accountability, and product-level thinking to every project.
+          </p>
+        </section>
+      </div>
+      <div class="btn-container">
+        <a href="#portfolio" class="btn btn--primary btn__projects"
+          >View Projects</a
+        >
       </div>
     </div>
 
     <main class="main">
-      <section class="intro__wrapper">
-        <a href="/cv/carlos_buitrago_CV.pdf" download class="download-cv">
-          Download CV
-        </a>
-        <span class="screen-reader">
-          I am a passionate Web Developer eager to grow my skills and contribute
-          to meaningful projects. I thrive in collaborative environments and am
-          excited to be part of a dynamic development team.
-        </span>
-        <p class="intro__text" aria-hidden="true">I am a passionate Web Developer eager to grow my skills and contribute to meaningful projects. I thrive in collaborative environments and am excited to be part of a dynamic development team.</p>
+      <section class="portfolio__section" id="portfolio">
+        <h2 class="main__title">Portfolio</h2>
+        <div class="portfolio__container">
+          <div class="portfolio__card">
+            <a
+              class="card__link"
+              href="/geographic-data-explorer"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="imgs/map.webp" alt="Project 1" />
+              <div class="card__description">
+                <h3>Geographic Data Explorer</h3>
+                <p class="card__text">
+                  A sleek, map-driven information tool that lets users explore
+                  countries, cities, news, and airport data worldwide. Built
+                  with Bootstrap, jQuery, and PHP, the app pulls real-time
+                  geographic and news data from external APIs for an interactive
+                  user experience.
+                </p>
+                <ul class="card__list">
+                  <li class="card__list_item">Leaflet.js</li>
+                  <li class="card__list_item">Geonames API</li>
+                  <li class="card__list_item">OpenCage API</li>
+                  <li class="card__list_item">RestCountries API</li>
+                  <li class="card__list_item">NewsData.io API</li>
+                  <li class="card__list_item">OpenWeatherMap API</li>
+                  <li class="card__list_item">Wikipedia API</li>
+                </ul>
+              </div>
+            </a>
+          </div>
 
+          <div class="portfolio__card">
+            <a
+              class="card__link"
+              href="/company-directory"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="imgs/directory.webp" alt="Project 2" />
+              <div class="card__description">
+                <h3>Company Directory</h3>
+                <p class="card__text">
+                  A dynamic company directory web app that allows admins to
+                  manage personnel, departments, and locations with ease.
+                  Featuring modal-based CRUD operations, instant search and
+                  filtering, and responsive design. Built using Bootstrap,
+                  jQuery, and PHP with AJAX, it delivers a smooth, real-time
+                  user experience without page reloads.
+                </p>
+                <ul class="card__list">
+                  <li class="card__list_item">PHP</li>
+                  <li class="card__list_item">MySQL</li>
+                  <li class="card__list_item">JQuery</li>
+                  <li class="card__list_item">AJAX</li>
+                  <li class="card__list_item">Bootstrap</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio__card">
+            <a
+              class="card__link"
+              href="https://reflekt.carlosbuitrago.me"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="imgs/reflekt.webp" alt="Reflekt Journal App" />
+              <div class="card__description">
+                <h3>Reflekt Journal App</h3>
+                <p class="card__text">
+                  Reflekt is a minimalist, privacy-focused journaling web app
+                  that lets users capture their thoughts day by day. Built with
+                  Laravel, Tailwind CSS, and Alpine.js, it offers a smooth and
+                  modern writing experience with a responsive UI and calendar
+                  view. Reflekt combines speed, security, and simplicity in one
+                  beautiful interface.
+                </p>
+                <ul class="card__list">
+                  <li class="card__list_item">PHP</li>
+                  <li class="card__list_item">Laravel</li>
+                  <li class="card__list_item">Tailwind</li>
+                  <li class="card__list_item">Alpine</li>
+                  <li class="card__list_item">Blade</li>
+                  <li class="card__list_item">SQLite</li>
+                  <li class="card__list_item">Vite</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio__card">
+            <a
+              class="card__link"
+              href="https://www.onlinelist.shop"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="imgs/online-list.webp" alt="Online List" />
+              <div class="card__description">
+                <h3>Online List</h3>
+                <p class="card__text">
+                  Online List is a simple, fast, and user-friendly shopping list
+                  app built with React. It allows users to add, view, and manage
+                  items effortlessly, storing them locally in the browser for
+                  persistent access. Designed for speed and usability, the app
+                  is styled for clarity and deployable as a single-page
+                  application. Perfect for quick grocery planning or managing
+                  to-do tasks on the go.
+                </p>
+                <ul class="card__list">
+                  <li class="card__list_item">React</li>
+                  <li class="card__list_item">Local Storage</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio__card">
+            <a
+              class="card__link"
+              href="https://carlosbuitragosan.github.io/reddit-redux-app/r/pics/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="imgs/reddit.webp" alt="Reddit App" />
+              <div class="card__description">
+                <h3>Reddit App</h3>
+                <p class="card__text">
+                  A fast, clean Reddit search app that lets users browse and
+                  preview subreddit posts with ease. Built with React and Redux
+                  Toolkit, the app fetches Reddit content dynamically and
+                  features instant search, loading skeletons, and modern
+                  routing. It’s a lightweight, responsive SPA that delivers a
+                  Reddit-browsing experience without the noise.
+                </p>
+                <ul class="card__list">
+                  <li class="card__list_item">React</li>
+                  <li class="card__list_item">Redux Toolkit</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio__card">
+            <a
+              class="card__link"
+              href="https://carlosbuitragosan.github.io/music-player/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="imgs/music-playlist.webp" alt="Spotify Playlist" />
+              <div class="card__description">
+                <h3>Spotify Playlist</h3>
+                <p class="card__text">
+                  Jamming is a Spotify-integrated music playlist builder that
+                  lets users search for songs, create custom playlists, and save
+                  them directly to their Spotify account. Built with React and
+                  the Spotify Web API, the app provides real-time search,
+                  intuitive interactions, and a slick user interface. It’s a
+                  modern and fun way to curate music with instant feedback via
+                  toast notifications.
+                </p>
+                <ul class="card__list">
+                  <li class="card__list_item">React</li>
+                  <li class="card__list_item">Spotify API</li>
+                  <li class="card__list_item">Vite</li>
+                  <li class="card__list_item">OAuth 2.0</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio__card">
+            <a
+              class="card__link"
+              href="https://expensetracker.uk"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="imgs/expense-tracker.webp" alt="Expense Tracker" />
+              <div class="card__description">
+                <h3>Expense Tracker</h3>
+                <p class="card__text">
+                  A full-stack expense tracker that lets users log, categorize,
+                  and review spending by month. The frontend is built with React
+                  and Bootstrap, while the backend uses Node.js with Express and
+                  PostgreSQL. Secure JWT-based authentication is implemented via
+                  Authorization headers. The app is deployed automatically via
+                  GitHub-integrated workflows: the frontend is served on Vercel,
+                  the backend runs on Render, and the database is hosted with
+                  Supabase.
+                </p>
+                <ul class="card__list">
+                  <li class="card__list_item">React</li>
+                  <li class="card__list_item">Vite</li>
+                  <li class="card__list_item">Zustand</li>
+                  <li class="card__list_item">ExpressJS</li>
+                  <li class="card__list_item">Bootstrap</li>
+                  <li class="card__list_item">PostgreSQL</li>
+                  <li class="card__list_item">Vercel</li>
+                  <li class="card__list_item">Render</li>
+                  <li class="card__list_item">Supabase</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+
+          <div class="portfolio__card">
+            <a
+              class="card__link"
+              href="https://flashcards.carlosbuitrago.me"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="imgs/flashcards.webp" alt="Country Flashcards" />
+              <div class="card__description">
+                <h3>Country Flashcards</h3>
+                <p class="card__text">
+                  Country Flashcards is a single-page application (SPA) that
+                  helps users learn countries by continent through interactive
+                  flashcards. Built with React, Zustand, and Bootstrap on the
+                  frontend, it communicates with a PHP + MySQL backend via
+                  RESTful APIs. The app follows an Agile development approach,
+                  with continuous deployment configured via GitHub workflows to
+                  deliver a working MVP that evolves incrementally as features
+                  are added.
+                </p>
+                <ul class="card__list">
+                  <li class="card__list_item">React</li>
+                  <li class="card__list_item">Vite</li>
+                  <li class="card__list_item">Zustand</li>
+                  <li class="card__list_item">Bootstrap</li>
+                  <li class="card__list_item">Laravel</li>
+                  <li class="card__list_item">MySQL</li>
+                  <li class="card__list_item">Framer Motion</li>
+                  <li class="card__list_item">Github Actions</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
       </section>
 
       <section class="skills__section">
@@ -140,8 +409,7 @@
               </li>
               <li class="skills_item" aria-label="open a-p-i">OpenAPI</li>
               <li class="skills_item">Render</li>
-              <li class="skills_item"aria-label="n-p-m">npm</li>
-
+              <li class="skills_item" aria-label="n-p-m">npm</li>
             </ul>
           </div>
 
@@ -156,244 +424,30 @@
               <li class="skills_item">Vercel</li>
               <li class="skills_item">Hostinger</li>
               <li class="skills_item">XAMPP</li>
-
             </ul>
           </div>
         </div>
       </section>
-
-      <section class="portfolio__section" id="portfolio">
-        <h2 class="main__title">Portfolio</h2>
-        <div class="portfolio__container">
-          <div class="portfolio__card">
-            <a class="card__link" 
-            href="/geographic-data-explorer" 
-            target="_blank" 
-            rel="noopener">
-              <img src="imgs/map.webp" alt="Project 1" />
-              <div class="card__description">
-                <h3>Geographic Data Explorer</h3>
-                <p class="card__text">A sleek, map-driven information tool that lets users explore countries, cities, news, and airport data worldwide. Built with Bootstrap, jQuery, and PHP, the app pulls real-time geographic and news data from external APIs for an interactive user experience.</p>
-                <ul class="card__list">
-                  <li class="card__list_item">Leaflet.js</li>
-                  <li class="card__list_item">Geonames API</li>
-                  <li class="card__list_item">OpenCage API</li>
-                  <li class="card__list_item">RestCountries API</li>
-                  <li class="card__list_item">NewsData.io API</li>
-                  <li class="card__list_item">OpenWeatherMap API</li>
-                  <li class="card__list_item">Wikipedia API</li>
-                  
-                </ul>
-              </div>
-            </a>
-          </div>
-
-          <div class="portfolio__card">
-            <a class="card__link" 
-            href="/company-directory" 
-            target="_blank" 
-            rel="noopener">
-              <img src="imgs/directory.webp" alt="Project 2" />
-              <div class="card__description">
-                <h3>Company Directory</h3>
-                <p class="card__text">A dynamic company directory web app that allows admins to manage personnel, departments, and locations with ease. Featuring modal-based CRUD operations, instant search and filtering, and responsive design. Built using Bootstrap, jQuery, and PHP with AJAX, it delivers a smooth, real-time user experience without page reloads.</p>
-                <ul class="card__list">
-                  <li class="card__list_item">PHP</li>
-                  <li class="card__list_item">MySQL</li>
-                  <li class="card__list_item">JQuery</li>
-                  <li class="card__list_item">AJAX</li>
-                  <li class="card__list_item">Bootstrap</li>
-                </ul>
-              </div>
-            </a>
-          </div>
-
-          <div class="portfolio__card">
-            <a class=" card__link" 
-            href="https://reflekt.carlosbuitrago.me" 
-            target="_blank" 
-            rel="noopener">
-              <img src="imgs/reflekt.webp" alt="Reflekt Journal App" />
-              <div class="card__description">
-                <h3>Reflekt Journal App</h3>
-                <p class="card__text">Reflekt is a minimalist, privacy-focused journaling web app that lets users capture their thoughts day by day. Built with Laravel, Tailwind CSS, and Alpine.js, it offers a smooth and modern writing experience with a responsive UI and calendar view. Reflekt combines speed, security, and simplicity in one beautiful interface.</p>
-                <ul class="card__list">
-                  <li class="card__list_item">PHP</li>
-                  <li class="card__list_item">Laravel</li>
-                  <li class="card__list_item">Tailwind</li>
-                  <li class="card__list_item">Alpine</li>
-                  <li class="card__list_item">Blade</li>
-                  <li class="card__list_item">SQLite</li>
-                  <li class="card__list_item">Vite</li>
-                </ul>
-              </div>
-            </a>
-          </div>
-
-          <div class="portfolio__card">
-            <a class="card__link" 
-            href="https://www.onlinelist.shop" 
-            target="_blank" 
-            rel="noopener">
-              <img src="imgs/online-list.webp" alt="Online List" />
-              <div class="card__description">
-                <h3>Online List</h3>
-                <p class="card__text">Online List is a simple, fast, and user-friendly shopping list app built with React. It allows users to add, view, and manage items effortlessly, storing them locally in the browser for persistent access. Designed for speed and usability, the app is styled for clarity and deployable as a single-page application. Perfect for quick grocery planning or managing to-do tasks on the go.</p>
-                <ul class="card__list">
-                  <li class="card__list_item">React</li>
-                  <li class="card__list_item">Local Storage</li>
-                </ul>
-              </div>
-            </a>
-          </div>
-
-          <div class="portfolio__card">
-            <a class="card__link" 
-            href="https://carlosbuitragosan.github.io/reddit-redux-app/r/pics/" 
-            target="_blank" 
-            rel="noopener">
-              <img src="imgs/reddit.webp" alt="Reddit App" />
-              <div class="card__description">
-                <h3>Reddit App</h3>
-                <p class="card__text">A fast, clean Reddit search app that lets users browse and preview subreddit posts with ease. Built with React and Redux Toolkit, the app fetches Reddit content dynamically and features instant search, loading skeletons, and modern routing. It’s a lightweight, responsive SPA that delivers a Reddit-browsing experience without the noise.</p>
-                <ul class="card__list">
-                  <li class="card__list_item">React</li>
-                  <li class="card__list_item">Redux Toolkit</li>
-                </ul>
-              </div>
-            </a>
-          </div>
-
-          <div class="portfolio__card">
-            <a class=" card__link" 
-              href="https://carlosbuitragosan.github.io/music-player/" 
-              target="_blank" 
-              rel="noopener">
-              <img src="imgs/music-playlist.webp" alt="Spotify Playlist" />
-              <div class="card__description">
-                <h3>Spotify Playlist</h3>
-                <p class="card__text">Jamming is a Spotify-integrated music playlist builder that lets users search for songs, create custom playlists, and save them directly to their Spotify account. Built with React and the Spotify Web API, the app provides real-time search, intuitive interactions, and a slick user interface. It’s a modern and fun way to curate music with instant feedback via toast notifications.</p>
-                <ul class="card__list">
-                  <li class="card__list_item">React</li>
-                  <li class="card__list_item">Spotify API</li>
-                  <li class="card__list_item">Vite</li>
-                  <li class="card__list_item">OAuth 2.0</li>
-                </ul>
-              </div>
-            </a>
-          </div>
-
-          <div class="portfolio__card">
-            <a class=" card__link" 
-              href="https://expensetracker.uk" 
-              target="_blank" 
-              rel="noopener">
-              <img src="imgs/expense-tracker.webp" alt="Expense Tracker" />
-              <div class="card__description">
-                <h3>Expense Tracker</h3>
-                <p class="card__text">A full-stack expense tracker that lets users log, categorize, and review spending by month. The frontend is built with React and Bootstrap, while the backend uses Node.js with Express and PostgreSQL. Secure JWT-based authentication is implemented via Authorization headers. The app is deployed automatically via GitHub-integrated workflows: the frontend is served on Vercel, the backend runs on Render, and the database is hosted with Supabase.</p>
-                <ul class="card__list">
-                  <li class="card__list_item">React</li>
-                  <li class="card__list_item">Vite</li>
-                  <li class="card__list_item">Zustand</li>
-                  <li class="card__list_item">ExpressJS</li>
-                  <li class="card__list_item">Bootstrap</li>
-                  <li class="card__list_item">PostgreSQL</li>
-                  <li class="card__list_item">Vercel</li>
-                  <li class="card__list_item">Render</li>
-                  <li class="card__list_item">Supabase</li>
-
-
-                </ul>
-              </div>
-            </a>
-          </div>
-
-          <div class="portfolio__card">
-            <a class=" card__link" 
-              href="https://flashcards.carlosbuitrago.me" 
-              target="_blank" 
-              rel="noopener">
-              <img src="imgs/flashcards.webp" alt="Country Flashcards" />
-              <div class="card__description">
-                <h3>Country Flashcards</h3>
-                <p class="card__text">Country Flashcards is a single-page application (SPA) that helps users learn countries by continent through interactive flashcards. Built with React, Zustand, and Bootstrap on the frontend, it communicates with a PHP + MySQL backend via RESTful APIs. The app follows an Agile development approach, with continuous deployment configured via GitHub workflows to deliver a working MVP that evolves incrementally as features are added.</p>
-                <ul class="card__list">
-                  <li class="card__list_item">React</li>
-                  <li class="card__list_item">Vite</li>
-                  <li class="card__list_item">Zustand</li>
-                  <li class="card__list_item">Bootstrap</li>
-                  <li class="card__list_item">Laravel</li>
-                  <li class="card__list_item">MySQL</li>
-                  <li class="card__list_item">Framer Motion</li>
-                  <li class="card__list_item">Github Actions</li>
-                </ul>
-              </div>
-            </a>
-          </div>
-
-        </div>
-      </section>
-
-      <section class="experience__section" id="education">
-        <h2 class="main__title">Education</h2>
-        <div>
-          <h3 class="subtitle">IT Career Switch</h3>
-          <p class="main__dates">May 2024 - May 2025</p>
-          <p class="paragraph">Gained the ability to design and build complete web applications from front to back. Learned how to structure responsive user interfaces with HTML, CSS, and Bootstrap, add interactivity with JavaScript and jQuery, and build dynamic functionality using React. Developed skills in working with server-side languages like PHP, Python, Java, and C#, and became confident managing application state, handling form submissions, connecting to APIs, and building CRUD operations. Comfortable working with Git, debugging code, and thinking through the logic of full-stack application flow.</p>
-        </div>
-
-        <div>
-          <h3 class="subtitle">Founders & Coders</h3>
-          <p class="main__dates">May - July 2023</p>
-          <p class="paragraph">Completed a 12-week course focused on HTML, CSS, and JavaScript fundamentals. Learned version control with Git, accessibility best practices, and collaborated on small projects using agile workflows.</p>
-        </div>
-        <div>
-          <h3 class="subtitle">University of London, SOAS</h3>
-          <p class="main__dates">2013</p>
-          <p class="paragraph">BA Music Studies & Nepalese Language</p>
-        </div>
-      </section>
-      <section class="experience__section" id="experience">
-        <h2 class="main__title">Work Experience</h2>
-        <div>
-          <h3 class="subtitle">Carlsberg Britvic</h3>
-          <p class="main__dates">August 2022 - Present</p>
-          <p class="paragraph">Raw Materials Operator - Responsible for receiving and offloading raw materials using a forklift, booking and distributing materials throughout the warehouse. Experienced in using SAP for inventory management and material tracking.</p>
-        </div>
-
-        <div>
-          <h3 class="subtitle">Getir</h3>
-          <p class="main__dates">July 2021 - August 2022</p>
-          <p class="paragraph">Warehouse Operative - Operated forklifts to efficiently load, unload, and organize goods in a fast-paced warehouse environment. Supported inventory control and maintained high standards of safety and accuracy.</p>
-        </div>
-        <div>
-          <h3 class="subtitle">Svana Yoga Studio</h3>
-          <p class="main__dates">May 2013 - March 2020</p>
-          <p class="paragraph">Owner & Manager - Independently managed all aspects of the business, including teaching classes, finances, staff management, and daily operations. Created and maintained the studio’s website using a no-code platform and handled social media marketing to grow the client base.</p>
-        </div>
-      </section>
-    
 
       <section id="contact">
         <h2 class="main__title">Contact</h2>
         <form id="contactForm">
           <div class="form__name">
             <label for="name">Name</label>
-            <input type="text" name="name" required>
+            <input type="text" name="name" required />
           </div>
-      
+
           <div class="form__email">
             <label for="email">Email</label>
-            <input type="email" name="email" required>
+            <input type="email" name="email" required />
           </div>
-      
+
           <div class="form__message">
             <label for="message">Message</label>
             <textarea name="message" rows="5" required></textarea>
           </div>
-      
-          <button type="submit">Send Message</button>
+
+          <button class="btn btn--primary" type="submit">Send Message</button>
         </form>
         <div id="formMessage"></div>
       </section>
@@ -406,10 +460,10 @@
       <p>Based in London, UK</p>
       <div class="footer__icons_container">
         <a href="https://github.com/carlosbuitragosan">
-          <img src="icons/github.svg" alt="Github" class="footer__icon"/>
+          <img src="icons/github.svg" alt="Github" class="footer__icon" />
         </a>
         <a href="https://www.linkedin.com/in/carlosbuitragosan/">
-          <img src="icons/linkedin.svg" alt="Linked in" class="footer__icon"/>
+          <img src="icons/linkedin.svg" alt="Linked in" class="footer__icon" />
         </a>
       </div>
     </footer>

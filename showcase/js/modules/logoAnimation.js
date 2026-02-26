@@ -3,7 +3,7 @@ export function fadeInDownText($text) {
     in: {
       effect: 'fadeInDownBig',
       delayScale: 2,
-      delay: 18,
+      delay: 16,
     },
   });
 }
