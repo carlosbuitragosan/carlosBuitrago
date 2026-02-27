@@ -1,5 +1,5 @@
 .skills__section {
-  padding: 0;
+  /* padding: 0; */
 }
 .main__title {
   font-size: 3rem;
@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: repeat(5, minmax(160px, 1fr));
   grid-auto-rows: minmax(25px, auto);
-  gap: 1vw;
+  gap: 10px;
   justify-items: center;
   position: relative;
 }

@@ -18,7 +18,7 @@
 
 .hero__title {
   color: var(--orange);
-  margin-top: 30vh;
+  margin-top: 250px;
 }
 
 .hero__subheading {
@@ -48,7 +48,7 @@
 
 .btn {
   display: inline-block;
-  padding: 0.9rem 1.8rem;
+  padding: 0.8rem 1.5rem;
   font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
