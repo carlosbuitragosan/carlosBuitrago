@@ -28,17 +28,10 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .skills__container {
-    padding: 0 10vw;
-  }
-}
-
 @media only screen and (max-width: 870px) {
   .hero__text_container {
     flex-direction: column;
-    padding: 0;
-    margin: 100px 5px 0 5px;
+    margin-top: 100px !important;
   }
 
   .hero__title {
@@ -67,28 +60,19 @@
   .hero {
     background: rgb(255, 251, 244);
   }
+  .hero__text_container {
+    margin-top: 20 !important;
+  }
 
   .hero__text {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .intro__text {
     padding-left: 0.5rem;
     padding-top: 1rem;
     width: 70%;
-  }
-
-  .skills__section,
-  .portfolio__section {
-    padding: 0 0.5rem 2rem 0.5rem;
-  }
-
-  .experience__section {
-    padding: 0 1rem 3rem 1rem;
-  }
-
-  #contact {
-    padding: 0 20vw 2rem 1rem;
+    font-size: 1rem;
   }
 }
 
@@ -110,10 +94,6 @@
 
   .experience__section {
     padding: 0 0.4rem 3rem 0.4rem;
-  }
-
-  #contact {
-    padding: 0 0.4rem 2rem 0.4rem;
   }
 }
 

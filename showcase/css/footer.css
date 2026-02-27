@@ -2,7 +2,7 @@
   height: 10px;
 }
 .footer {
-  background: #43bccd;
+  background: rgb(255, 251, 244);
   padding: 2rem;
   z-index: -1;
   position: fixed;

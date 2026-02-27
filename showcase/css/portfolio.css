@@ -7,7 +7,7 @@
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .portfolio__card {
@@ -22,7 +22,6 @@
 
 .portfolio__card:hover {
   transform: translateY(-5px);
-  
 }
 
 .main__title {
@@ -56,7 +55,7 @@
 }
 
 .card__list:has(.card__list_item:nth-child(2)) {
-  padding-left: 1rem;;
+  padding-left: 1rem;
 }
 
 .card__list:has(.card__list_item:nth-child(4)) {

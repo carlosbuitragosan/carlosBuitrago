@@ -6,9 +6,9 @@
   .navbar {
     padding: 1rem;
     border-radius: 4px;
-    background-color: #80808099;
+    background-color: #808080ee;
   }
-  
+
   .burger__menu {
     --x-width: calc(
       var(--burger-height) * 1.41421356237
