@@ -1,9 +1,10 @@
-document
-  .getElementById('contactForm')
-  .addEventListener('submit', async function (e) {
+export function initContactForm() {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+
+  form.addEventListener('submit', async function (e) {
     e.preventDefault();
 
-    const form = e.target;
     const formData = new FormData(form);
 
     const response = await fetch('php/contact.php', {
@@ -16,3 +17,4 @@ document
     document.getElementById('formMessage').textContent = result.message;
     form.reset();
   });
+}

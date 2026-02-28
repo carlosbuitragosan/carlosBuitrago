@@ -8,6 +8,8 @@ import {
 } from './modules/skillsAnimation.js';
 import { showFooter } from './modules/showFooter.js';
 import { initDropdownMenu } from './modules/projectsDropdown.js';
+import { initVideoModal } from './modules/videoModal.js';
+import { initContactForm } from './contactForm.js';
 
 const container = document.querySelector('.skills__container');
 const gridItems = document.querySelectorAll('.skills__category');
@@ -26,3 +28,5 @@ resetTransformOnIntersect(container, gridItems);
 highlightOnHover(gridItems);
 showFooter($main, $sentinel, $footer);
 initDropdownMenu();
+initVideoModal();
+initContactForm();
