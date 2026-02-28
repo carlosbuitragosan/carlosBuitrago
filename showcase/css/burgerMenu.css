@@ -21,6 +21,7 @@
     gap: var(--bar-gap);
     cursor: pointer;
     padding: 0.5rem;
+    margin-right: 1rem;
   }
 
   .burger__menu input, /* checkbox. middle line */
@@ -50,7 +51,7 @@
   .burger__menu:has(input:checked)::before {
     rotate: 45deg; /*rotates the top line downwards */
     width: var(
-      --x-width
+      --bar-width
     ); /*sets the new length of the line when it becomes a cross */
     translate: 0 calc(var(--bar-height) / -2); /*moves the axis slightly up */
   }
@@ -58,7 +59,7 @@
   .burger__menu:has(input:checked)::after {
     rotate: -45deg; /* rotates the bottom line upwards */
     width: var(
-      --x-width
+      --bar-width
     ); /*sets the new length of the line when it becomes a cross */
     translate: 0 calc(var(--bar-height) / 2); /*moves the axis slightly down */
   }
