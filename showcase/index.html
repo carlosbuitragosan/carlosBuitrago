@@ -101,244 +101,204 @@
           <h2 class="main__title">Projects</h2>
           <div class="portfolio__container">
             <div class="portfolio__card">
-              <a
-                class="card__link"
-                href="/geographic-data-explorer"
-                target="_blank"
-                rel="noopener"
-              >
-                <img src="imgs/map.webp" alt="Project 1" />
-                <div class="card__description">
-                  <h3>Geographic Data Explorer</h3>
-                  <p class="card__text">
-                    A sleek, map-driven information tool that lets users explore
-                    countries, cities, news, and airport data worldwide. Built
-                    with Bootstrap, jQuery, and PHP, the app pulls real-time
-                    geographic and news data from external APIs for an
-                    interactive user experience.
-                  </p>
-                  <ul class="card__list">
-                    <li class="card__list_item">Leaflet.js</li>
-                    <li class="card__list_item">Geonames API</li>
-                    <li class="card__list_item">OpenCage API</li>
-                    <li class="card__list_item">RestCountries API</li>
-                    <li class="card__list_item">NewsData.io API</li>
-                    <li class="card__list_item">OpenWeatherMap API</li>
-                    <li class="card__list_item">Wikipedia API</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
+              <img
+                src="imgs/perfumery-manager.webp"
+                alt="perfumery formulation manager"
+              />
+              <div class="card__description">
+                <h3>Perfumery Formulation Manager</h3>
+                <p class="card__text">
+                  A full-stack Laravel application for managing perfumery
+                  materials, inventory batches, and structured blend
+                  formulations. The system models real-world ingredient
+                  relationships and enforces percentage-based composition
+                  validation with relational integrity.
+                </p>
+                <p>
+                  Provides a structured system for tracking raw materials,
+                  bottle inventory, and perfume blends while ensuring
+                  formulation percentages remain mathematically consistent and
+                  relationally valid.
+                </p>
 
-            <div class="portfolio__card">
-              <a
-                class="card__link"
-                href="/company-directory"
-                target="_blank"
-                rel="noopener"
-              >
-                <img src="imgs/directory.webp" alt="Project 2" />
-                <div class="card__description">
-                  <h3>Company Directory</h3>
-                  <p class="card__text">
-                    A dynamic company directory web app that allows admins to
-                    manage personnel, departments, and locations with ease.
-                    Featuring modal-based CRUD operations, instant search and
-                    filtering, and responsive design. Built using Bootstrap,
-                    jQuery, and PHP with AJAX, it delivers a smooth, real-time
-                    user experience without page reloads.
-                  </p>
-                  <ul class="card__list">
-                    <li class="card__list_item">PHP</li>
-                    <li class="card__list_item">MySQL</li>
-                    <li class="card__list_item">JQuery</li>
-                    <li class="card__list_item">AJAX</li>
-                    <li class="card__list_item">Bootstrap</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
+                <h4>Stack</h4>
+                <p>Laravel · MySQL · Tailwind CSS · Pest · GitHub Actions</p>
 
-            <div class="portfolio__card">
-              <a
-                class="card__link"
-                href="https://reflekt.carlosbuitrago.me"
-                target="_blank"
-                rel="noopener"
-              >
-                <img src="imgs/reflekt.webp" alt="Reflekt Journal App" />
-                <div class="card__description">
-                  <h3>Reflekt Journal App</h3>
-                  <p class="card__text">
-                    Reflekt is a minimalist, privacy-focused journaling web app
-                    that lets users capture their thoughts day by day. Built
-                    with Laravel, Tailwind CSS, and Alpine.js, it offers a
-                    smooth and modern writing experience with a responsive UI
-                    and calendar view. Reflekt combines speed, security, and
-                    simplicity in one beautiful interface.
-                  </p>
-                  <ul class="card__list">
-                    <li class="card__list_item">PHP</li>
-                    <li class="card__list_item">Laravel</li>
-                    <li class="card__list_item">Tailwind</li>
-                    <li class="card__list_item">Alpine</li>
-                    <li class="card__list_item">Blade</li>
-                    <li class="card__list_item">SQLite</li>
-                    <li class="card__list_item">Vite</li>
-                  </ul>
+                <h4>Highlights</h4>
+                <ul class="card__list">
+                  <li class="card__list_item">
+                    Relational domain modelling with enforced data integrity
+                  </li>
+                  <li class="card__list_item">
+                    Percentage-based blend validation logic
+                  </li>
+                  <li class="card__list_item">
+                    Test-driven development using Pest
+                  </li>
+                </ul>
+                <div class="card__link">
+                  <a
+                    href="https://github.com/carlosbuitragosan/perfume-formulation-manager"
+                    target="_blank"
+                    rel="noopener"
+                    ><img
+                      src="icons/github.svg"
+                      alt="Github"
+                      class="card__github_icon"
+                  /></a>
                 </div>
-              </a>
+              </div>
             </div>
-
             <div class="portfolio__card">
-              <a
-                class="card__link"
-                href="https://www.onlinelist.shop"
-                target="_blank"
-                rel="noopener"
-              >
-                <img src="imgs/online-list.webp" alt="Online List" />
-                <div class="card__description">
-                  <h3>Online List</h3>
-                  <p class="card__text">
-                    Online List is a simple, fast, and user-friendly shopping
-                    list app built with React. It allows users to add, view, and
-                    manage items effortlessly, storing them locally in the
-                    browser for persistent access. Designed for speed and
-                    usability, the app is styled for clarity and deployable as a
-                    single-page application. Perfect for quick grocery planning
-                    or managing to-do tasks on the go.
-                  </p>
-                  <ul class="card__list">
-                    <li class="card__list_item">React</li>
-                    <li class="card__list_item">Local Storage</li>
-                  </ul>
+              <img src="imgs/expense-tracker.webp" alt="expense tracker" />
+              <div class="card__description">
+                <h3>Expense Tracker</h3>
+                <p class="card__text">
+                  A full-stack expense tracking application that allows users to
+                  log, categorize, and review spending. The system implements
+                  JWT-based authentication, protected REST APIs, and structured
+                  state management with secure production deployment.
+                </p>
+                <p>
+                  Provides authenticated users with a secure system for tracking
+                  personal expenses while enforcing protected API access and
+                  structured data persistence.
+                </p>
+
+                <h4>Stack</h4>
+                <p>React · Vite · Zustand · Express.js · PostgreSQL · JWT</p>
+
+                <h4>Highlights</h4>
+                <ul class="card__list">
+                  <li class="card__list_item">
+                    JWT-based authentication with protected API routes
+                  </li>
+                  <li class="card__list_item">
+                    Global state management using Zustand
+                  </li>
+                  <li class="card__list_item">
+                    RESTful API architecture with PostgreSQL
+                  </li>
+                  <li class="card__list_item">
+                    Secure production deployment on a self-managed VPS using
+                    Nginx and HTTPS
+                  </li>
+                </ul>
+                <div class="card__link">
+                  <a
+                    href="https://github.com/carlosbuitragosan/expense-tracker"
+                    target="_blank"
+                    rel="noopener"
+                    ><img
+                      src="icons/github.svg"
+                      alt="Github"
+                      class="card__github_icon"
+                  /></a>
                 </div>
-              </a>
+              </div>
             </div>
-
             <div class="portfolio__card">
-              <a
-                class="card__link"
-                href="https://carlosbuitragosan.github.io/reddit-redux-app/r/pics/"
-                target="_blank"
-                rel="noopener"
-              >
-                <img src="imgs/reddit.webp" alt="Reddit App" />
-                <div class="card__description">
-                  <h3>Reddit App</h3>
-                  <p class="card__text">
-                    A fast, clean Reddit search app that lets users browse and
-                    preview subreddit posts with ease. Built with React and
-                    Redux Toolkit, the app fetches Reddit content dynamically
-                    and features instant search, loading skeletons, and modern
-                    routing. It’s a lightweight, responsive SPA that delivers a
-                    Reddit-browsing experience without the noise.
-                  </p>
-                  <ul class="card__list">
-                    <li class="card__list_item">React</li>
-                    <li class="card__list_item">Redux Toolkit</li>
-                  </ul>
+              <img
+                src="imgs/geographic-data-explorer.webp"
+                alt="geographic data explorer"
+              />
+              <div class="card__description">
+                <h3>Geographic Data Explorer</h3>
+                <p class="card__text">
+                  An interactive map-based dashboard for exploring country-level
+                  geographic, weather, and news data. The application aggregates
+                  multiple third-party APIs and normalizes responses through
+                  server-side PHP endpoints before rendering them in a dynamic
+                  Leaflet interface.
+                </p>
+                <p>
+                  Consolidates fragmented external data sources into a single
+                  structured interface, handling inconsistent API responses and
+                  failed requests to ensure predictable application behaviour.
+                </p>
+
+                <h4>Stack</h4>
+                <p>PHP · JavaScript · Leaflet.js · Bootstrap · REST APIs</p>
+
+                <h4>Highlights</h4>
+                <ul class="card__list">
+                  <li class="card__list_item">
+                    Server-side aggregation and normalization of multiple APIs
+                  </li>
+                  <li class="card__list_item">
+                    Structured JSON parsing with validation and error handling
+                  </li>
+                  <li class="card__list_item">
+                    Dynamic marker clustering and layered controls using Leaflet
+                  </li>
+                </ul>
+                <div class="card__link">
+                  <a
+                    href="https://github.com/carlosbuitragosan/geographic-data-explorer"
+                    target="_blank"
+                    rel="noopener"
+                    ><img
+                      src="icons/github.svg"
+                      alt="Github"
+                      class="card__github_icon"
+                  /></a>
                 </div>
-              </a>
+              </div>
             </div>
-
             <div class="portfolio__card">
-              <a
-                class="card__link"
-                href="https://carlosbuitragosan.github.io/music-player/"
-                target="_blank"
-                rel="noopener"
-              >
-                <img src="imgs/music-playlist.webp" alt="Spotify Playlist" />
-                <div class="card__description">
-                  <h3>Spotify Playlist</h3>
-                  <p class="card__text">
-                    Jamming is a Spotify-integrated music playlist builder that
-                    lets users search for songs, create custom playlists, and
-                    save them directly to their Spotify account. Built with
-                    React and the Spotify Web API, the app provides real-time
-                    search, intuitive interactions, and a slick user interface.
-                    It’s a modern and fun way to curate music with instant
-                    feedback via toast notifications.
-                  </p>
-                  <ul class="card__list">
-                    <li class="card__list_item">React</li>
-                    <li class="card__list_item">Spotify API</li>
-                    <li class="card__list_item">Vite</li>
-                    <li class="card__list_item">OAuth 2.0</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
+              <img
+                src="imgs/spotify-playlist-manager.webp"
+                alt="Spotify Playlist Manager"
+              />
+              <div class="card__description">
+                <h3>Spotify Playlist Manager</h3>
+                <p class="card__text">
+                  A React single-page application that integrates the Spotify
+                  Web API using OAuth 2.0 (Implicit Grant) authentication.
+                  Authenticated users can search tracks and create playlists
+                  directly in their Spotify account through protected API
+                  requests.
+                </p>
+                <p>
+                  Demonstrates secure client-side integration with a third-party
+                  OAuth provider, managing access tokens and protected API
+                  operations within a frontend-only architecture.
+                </p>
 
-            <div class="portfolio__card">
-              <a
-                class="card__link"
-                href="https://expensetracker.uk"
-                target="_blank"
-                rel="noopener"
-              >
-                <img src="imgs/expense-tracker.webp" alt="Expense Tracker" />
-                <div class="card__description">
-                  <h3>Expense Tracker</h3>
-                  <p class="card__text">
-                    A full-stack expense tracker that lets users log,
-                    categorize, and review spending by month. The frontend is
-                    built with React and Bootstrap, while the backend uses
-                    Node.js with Express and PostgreSQL. Secure JWT-based
-                    authentication is implemented via Authorization headers. The
-                    app is deployed automatically via GitHub-integrated
-                    workflows: the frontend is served on Vercel, the backend
-                    runs on Render, and the database is hosted with Supabase.
-                  </p>
-                  <ul class="card__list">
-                    <li class="card__list_item">React</li>
-                    <li class="card__list_item">Vite</li>
-                    <li class="card__list_item">Zustand</li>
-                    <li class="card__list_item">ExpressJS</li>
-                    <li class="card__list_item">Bootstrap</li>
-                    <li class="card__list_item">PostgreSQL</li>
-                    <li class="card__list_item">Vercel</li>
-                    <li class="card__list_item">Render</li>
-                    <li class="card__list_item">Supabase</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
+                <h4>Stack</h4>
+                <p>
+                  React · Vite · Spotify Web API · OAuth 2.0 (Implicit Grant) ·
+                  GitHub Actions
+                </p>
 
-            <div class="portfolio__card">
-              <a
-                class="card__link"
-                href="https://flashcards.carlosbuitrago.me"
-                target="_blank"
-                rel="noopener"
-              >
-                <img src="imgs/flashcards.webp" alt="Country Flashcards" />
-                <div class="card__description">
-                  <h3>Country Flashcards</h3>
-                  <p class="card__text">
-                    Country Flashcards is a single-page application (SPA) that
-                    helps users learn countries by continent through interactive
-                    flashcards. Built with React, Zustand, and Bootstrap on the
-                    frontend, it communicates with a PHP + MySQL backend via
-                    RESTful APIs. The app follows an Agile development approach,
-                    with continuous deployment configured via GitHub workflows
-                    to deliver a working MVP that evolves incrementally as
-                    features are added.
-                  </p>
-                  <ul class="card__list">
-                    <li class="card__list_item">React</li>
-                    <li class="card__list_item">Vite</li>
-                    <li class="card__list_item">Zustand</li>
-                    <li class="card__list_item">Bootstrap</li>
-                    <li class="card__list_item">Laravel</li>
-                    <li class="card__list_item">MySQL</li>
-                    <li class="card__list_item">Framer Motion</li>
-                    <li class="card__list_item">Github Actions</li>
-                  </ul>
+                <h4>Highlights</h4>
+                <ul class="card__list">
+                  <li class="card__list_item">
+                    OAuth 2.0 Implicit Grant flow with client-side token
+                    extraction and persistence
+                  </li>
+                  <li class="card__list_item">
+                    Authorization header management for protected endpoints
+                  </li>
+                  <li class="card__list_item">
+                    401 handling with automatic token invalidation
+                  </li>
+                  <li class="card__list_item">
+                    CI-based deployment to GitHub Pages
+                  </li>
+                </ul>
+                <div class="card__link">
+                  <a
+                    href="https://github.com/carlosbuitragosan/spotify-playlist-manager"
+                    target="_blank"
+                    rel="noopener"
+                    ><img
+                      src="icons/github.svg"
+                      alt="Github"
+                      class="card__github_icon"
+                  /></a>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>

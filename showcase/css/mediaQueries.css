@@ -58,6 +58,7 @@
 
   .hero {
     background: rgb(255, 251, 244);
+    margin-top: 0px;
   }
 
   .hero__title {

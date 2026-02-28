@@ -1,6 +1,3 @@
-.skills__section {
-  /* padding: 0; */
-}
 .main__title {
   font-size: 3rem;
   margin: 0;
@@ -89,4 +86,18 @@
 
 .skills_item {
   margin-bottom: 4px;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+.card__github_icon {
+  width: 30px;
+}
+
+.card__link {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
