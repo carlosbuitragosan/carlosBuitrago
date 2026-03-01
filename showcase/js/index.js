@@ -9,7 +9,7 @@ import {
 import { showFooter } from './modules/showFooter.js';
 import { initDropdownMenu } from './modules/projectsDropdown.js';
 import { initVideoModal } from './modules/videoModal.js';
-import { initContactForm } from './contactForm.js';
+import { initContactForm } from './modules/contactForm.js';
 
 const container = document.querySelector('.skills__container');
 const gridItems = document.querySelectorAll('.skills__category');

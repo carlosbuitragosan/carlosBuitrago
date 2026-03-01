@@ -31,5 +31,9 @@
 }
 
 #formMessage {
+  display: none;
   margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
 }
