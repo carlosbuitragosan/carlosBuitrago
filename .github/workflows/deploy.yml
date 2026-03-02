@@ -39,17 +39,3 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: geographic-data-explorer/
           server-dir: geographic-data-explorer/
-
-      # Deploy project2 to public_html/project2/
-      - name: Deploy project2
-        uses: carlosbuitragosan/ftp-deploy-action@master
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: company-directory/
-          server-dir: company-directory/
-          exclude: |
-            .prettierrc
-            .php-cs-fixer.php
-            .php-cs-fixer.cache
