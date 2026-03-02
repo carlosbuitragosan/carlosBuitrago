@@ -17,6 +17,7 @@
   overflow: hidden;
   transition: transform 0.2s ease;
   padding-bottom: 1rem;
+  cursor: pointer;
 }
 
 .portfolio__card:hover {

@@ -4,6 +4,13 @@ export function initVideoModal() {
   const iframe = document.getElementById('videoFrame');
   const closeBtn = document.querySelector('.modal__close');
   const overlay = document.querySelector('.modal__overlay');
+  const githubLinks = document.querySelectorAll('.card__link a');
+
+  githubLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  });
 
   cards.forEach((card) => {
     card.addEventListener('click', () => {
