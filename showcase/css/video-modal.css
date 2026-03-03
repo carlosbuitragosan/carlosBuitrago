@@ -40,10 +40,10 @@
 
 .modal__close {
   position: absolute;
-  top: -40px;
-  right: 0;
+  top: 70px;
+  right: 15px;
   font-size: 2rem;
-  background: none;
+  background: var(--grey);
   border: none;
   color: white;
   cursor: pointer;
