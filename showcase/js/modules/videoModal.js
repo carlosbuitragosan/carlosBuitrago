@@ -15,9 +15,7 @@ export function initVideoModal() {
   cards.forEach((card) => {
     const videoURL = card.dataset.video;
     if (!videoURL) return;
-    else {
-      card.style.cursor = 'pointer';
-    }
+    card.style.cursor = 'pointer';
 
     card.addEventListener('click', () => {
       iframe.src = videoURL + '?autoplay=1&mute=1';
