@@ -266,28 +266,29 @@
                 <h3>Spotify Playlist Manager</h3>
                 <p class="card__text">
                   A React single-page application that integrates the Spotify
-                  Web API using OAuth 2.0 (Implicit Grant) authentication.
-                  Authenticated users can search tracks and create playlists
-                  directly in their Spotify account through protected API
-                  requests.
+                  Web API using OAuth 2.0 (Authorization Code + PKCE)
+                  authentication. Authenticated users can search tracks and
+                  create playlists directly in their Spotify account through
+                  protected API requests.
                 </p>
                 <p>
                   Demonstrates secure client-side integration with a third-party
-                  OAuth provider, managing access tokens and protected API
-                  operations within a frontend-only architecture.
+                  OAuth provider, implementing the PKCE flow to retrieve access
+                  tokens and perform authenticated API operations within a
+                  frontend-only architecture.
                 </p>
 
                 <h4>Stack</h4>
                 <p>
-                  React · Vite · Spotify Web API · OAuth 2.0 (Implicit Grant) ·
-                  GitHub Actions
+                  React · Vite · Spotify Web API · OAuth 2.0 (Authorization Code
+                  + PKCE) · GitHub Actions
                 </p>
 
                 <h4>Highlights</h4>
                 <ul class="card__list">
                   <li class="card__list_item">
-                    OAuth 2.0 Implicit Grant flow with client-side token
-                    extraction and persistence
+                    OAuth 2.0 Authorization Code flow with PKCE flow for secure
+                    client-side authentication
                   </li>
                   <li class="card__list_item">
                     Authorization header management for protected endpoints
