@@ -1,4 +1,4 @@
-name: Deploy Showcase and Projects to Hostinger
+name: Deploy to VPS
 
 on:
   push:
@@ -6,36 +6,25 @@ on:
       - main
 
 jobs:
-  ftp-deploy:
-    name: Upload via FTP
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -p 2222 -H 187.77.177.77 >> ~/.ssh/known_hosts
 
-      # Deploy showcase/ content to root (public_html/)
-      - name: Deploy showcase to root
-        uses: carlosbuitragosan/ftp-deploy-action@master
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: showcase/
-          server-dir: /
-          exclude: |
-            .eslintrc
-            .eslintignore
-            .prettierrc
-            package.json
-            package-lock.json
+      - name: Deploy to VPS
+        run: |
+          ssh -p 2222 -o StrictHostKeyChecking=no -o IdentitiesOnly=yes deploy@187.77.177.77 << 'EOF'
+          set -e
 
-      # Deploy project1/ to public_html/project1/
-      - name: Deploy project1
-        uses: carlosbuitragosan/ftp-deploy-action@master
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: geographic-data-explorer/
-          server-dir: geographic-data-explorer/
+          cd /var/www/portfolio
+
+          git fetch origin main
+          git reset --hard origin/main
+
+          EOF
